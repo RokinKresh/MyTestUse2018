@@ -33,9 +33,9 @@
     _scollView = [[UIScrollView alloc] init];
     _scollView.frame = self.view.frame;
     _scollView.pagingEnabled = YES;
-    _scollView.contentSize = CGSizeMake(self.view.bounds.size.width * 5,
+    _scollView.contentSize = CGSizeMake(self.view.bounds.size.width * 6,
                                         self.view.bounds.size.height);
-    for (int i = 0; i < 5; i ++) {
+    for (int i = 0; i < 6; i ++) {
         UIScrollView *subSrol = [[UIScrollView alloc] init];
         subSrol.frame = CGRectMake(self.view.bounds.size.width * i, 0, self.view.bounds.size.width, self.view.bounds.size.height);
         subSrol.contentSize = CGSizeMake(self.view.bounds.size.width * 2, self.view.bounds.size.height);
@@ -58,6 +58,10 @@
         
         if (i == 4) {
             subSrol.backgroundColor = [UIColor grayColor];
+        }
+        
+        if (i == 5) {
+            subSrol.backgroundColor = [UIColor greenColor];
         }
         
         
