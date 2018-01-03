@@ -70,6 +70,12 @@
     
     
     [self.view addSubview:_scollView];
+    
+    UIView *whiteview = [[UIView alloc] init];
+    whiteview.backgroundColor = [UIColor whiteColor];
+    whiteview.frame = CGRectMake(10, 10, 100, 100);
+    
+    [self.view addSubview:whiteview];
 }
 
 
